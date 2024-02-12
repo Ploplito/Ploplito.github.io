@@ -24,7 +24,7 @@ function validateLogin() {
 
     // Vérifier si l'utilisateur appartient à la base de données Premium
     if (username in premiumUsers && password === premiumUsers[username]) {
-        window.location.href = 'index.html';
+        window.location.href = 'home.html';
     }
     // Vérifier si l'utilisateur appartient à la base de données Classic
     else if (username in classicUsers && password === classicUsers[username]) {
