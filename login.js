@@ -36,3 +36,9 @@ function validateLogin() {
         document.getElementById('errorPopup').style.display = 'block';
     }
 }
+// Fonction pour gérer l'appui sur la touche "Entrée"
+function handleKeyPress(event) {
+    if (event.key === 'Enter') {
+        validateLogin();
+    }
+}
