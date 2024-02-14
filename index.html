@@ -27,9 +27,9 @@
         <input type="text" id="username" name="username" required>
 
         <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+        <input type="password" id="password" name="password" onkeypress="handleKeyPress(event)" required>
 
-        <button type="button" onclick="validateLogin()" onkeypress="handleKeyPress(event)" >Login</button>
+        <button type="button" onclick="validateLogin()">Login</button>
     </form>
 
     <div id="errorPopup" class="error-popup">
